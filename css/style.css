@@ -1,0 +1,967 @@
+@font-face { 
+    font-family: 'Raleway';
+    src: url('/font/Raleway-Regular.ttf');
+}
+ 
+body {
+    margin: 0;
+}
+
+/*header inicio*/
+
+header {
+    width: 70%;
+    margin: auto;
+    height: 90px;
+    display: flex;
+    background: white;
+}
+
+.linha {
+    border-bottom: 1px solid rgb(233, 230, 230);
+}
+
+.logo {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 110px;
+}
+
+.imglogo {
+    width: 100%;
+}
+
+#menu-toggle input {
+  display: none;
+}
+
+#menu-list {
+    text-align: center;
+    width: 30%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-menu {
+    margin: 10%;
+}
+
+.item-menu a {
+    color: #C8C8C8;
+    margin: 5%;
+    font-size: 18px;
+    font-weight: normal;
+    font-family: 'Raleway';
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.item-menu a:hover {
+    color: #4EC2DD;
+}
+
+.item-menu-ativo {
+    margin: 5%;
+}
+  
+.item-menu-ativo a {
+    color: #4EC2DD;
+    font-family: 'Raleway';
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 20%;
+}
+
+/* busca início*/
+
+.search {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 5px #00000029;
+    border-radius: 5px;
+    width: 50%;
+    height: 50%;
+    margin: 2% auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search i {
+    font-size: 20px;
+    color: #C8C8C8;
+    align-items: center;
+}
+
+.search input {
+    width: 100%;
+    border: none;
+    font-family: 'Raleway';
+    color: #C8C8C8;
+    font-size: 14px;
+    margin-left: 0%;
+    height: 35px;
+}
+
+::-webkit-input-placeholder  { 
+    color: #C8C8C8; 
+}
+
+.search button {
+    width: 12%;
+    border: none;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-left: 2%;
+}
+
+.inputautocomplete {
+    font-family: 'Raleway';
+}
+
+form {
+    width: 100%;
+}
+
+ .autocomplete {
+    position: relative;
+    display: inline-block;
+    width: 95%;
+  }
+
+  .autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+  
+  .autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff; 
+    border-bottom: 1px solid #d4d4d4;
+    font-family: 'Raleway';
+    color: #666; 
+  }
+  
+  .autocomplete-items div:hover {
+    background-color: #e9e9e9; 
+  }
+  
+  .autocomplete-active {
+    background-color: DodgerBlue !important; 
+    color: #ffffff; 
+  }
+
+/* busca fim */
+
+
+/* carrinho de compras início*/
+
+#cart {
+    padding-left: 5%;
+    height: 100%;
+    position: relative;
+}
+  
+#cart i {
+    font-size: 25px;
+    padding-top: 28px;
+    padding-left: 5px;
+    height: 100%;
+    color: #0F4156;
+}
+  
+#badge {
+    padding-left: 9px;
+    padding-right: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+    position: absolute;
+    font-size: 12px;
+    font-family: 'Raleway';
+    font-weight: 900;
+    background: #4EC2DD;
+    color: #fff;
+    padding: 1px 5px;
+    vertical-align: middle;
+    margin-left: -10px;
+    margin-top: 20px;
+}
+
+/* carrinho de compras fim */
+
+/*primeira section inicio*/
+
+main {
+    width: 70%;
+    margin: auto;
+}
+
+.hero {
+    width: 100%;
+    height: 600px;
+    margin-bottom: 5%;
+}
+
+nav {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 30px 0px 30px 0px;
+    width: fit-content;
+    display: flex;
+    white-space: nowrap;
+}
+ 
+.itembreadcrumb {
+    margin: 5%;
+}
+
+.itembreadcrumb a {
+    margin: 5%;
+    font-size: 16px;
+    font-weight: bold;
+    color: #C8C8C8;
+    font-family: 'Raleway';
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.itembreadcrumb a:hover {
+    color: #999999;
+    border-bottom: 2px solid #4EC2DD;
+}
+
+.itembreadcrumb i {
+    color: #C8C8C8;
+    font-size: 10px;
+    margin-right: 5%;
+}
+  
+.atual a {
+    color: #4EC2DD;
+    font-family: 'Raleway';
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/*produto principal*/
+
+
+.produtoprincipal {
+    display: inline-flex;
+}
+
+.small-img {
+    border: 2px solid #F8F8F8;
+    margin-right: 1%;
+    width: 9%;
+    height: fit-content;
+    padding:1px;
+}
+
+.small-img img {
+    width: 100%;
+}
+
+.large-img {
+    border: 2px solid #F8F8F8;
+    width: 65%;
+}
+
+.large-img img{
+    width: 100%;
+}
+
+.nomeproduto {
+    display: inline-flex;
+    margin-left: 20px;
+}
+
+.nomeproduto p {
+    color: #C8C8C8;
+    font-family: 'Raleway';
+    font-weight: normal; 
+    font-size: 32px;
+    line-height: 46px;
+    margin-top: 0;
+    margin-bottom: 60px;
+}
+
+.preco {
+    background: #F8F8F8;
+    padding: 10px 10px 10px 20px;
+}
+
+.preconormal {
+    color: #C8C8C8;
+    font-family: 'Raleway';
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+.precodesconto {
+    color: #4EC2DD;
+    font-family: 'Raleway';
+    font-size: 30px;
+    font-weight: bolder;
+    margin-top: 0px;
+    margin-bottom: 18px;
+}
+
+/*botao comprar*/
+
+.botaocomprar {
+    background: #71CE4B 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 5px;
+    border: 0px;
+    color: white;
+    font-family: 'Raleway';
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 30px;
+    margin: 2% 2% 2% 0%;
+    height: 50px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botaocomprar:hover {
+    background: rgb(64, 126, 40) 0% 0% no-repeat padding-box;
+}
+
+/* Overlay (fundo por tras da modal) */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+}
+  
+/* Contéudo da modal */
+.modal-content {
+    background-color: #fefefe;
+    width: 20%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    font-family: 'Raleway';
+    text-transform: uppercase;
+    color: #4EC2DD;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.modal-content img {
+    width: 80px;
+    margin: 45px auto;
+}
+
+.modal-content p {
+    padding: 0px 45px;
+}
+
+/*botao ok modal*/
+
+.botaook {
+    background: #0F4156 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 5px;
+    border: 0px;
+    color: white;
+    font-family: 'Raleway';
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 45px 10px 45px;
+    margin: 30px auto;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.close:hover, .close:focus {
+    background: rgb(10, 41, 54) 0% 0% no-repeat padding-box;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.fretebox {
+    display: flex;
+    background-color: #4EC2DD;
+    border-radius: 5px;
+    padding: 2%;
+    margin: 20px;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.frete p {
+    color: white;
+    font-family: 'Raleway';
+    font-weight: 700; 
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-left: 2%;
+}
+
+.calculofretewrapper {
+    display: inline-flex;
+}
+
+.campocep {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 5px #00000029;
+    border-radius: 5px;
+    height: 40px;
+    margin: 2%; 
+    padding: 0px 40px;
+}
+
+.campocep2 {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 5px #00000029;
+    border-radius: 5px;
+    height: 40px;
+    justify-content: center; 
+    margin: 2%; 
+    padding: 0px 0px;
+}
+
+.campocep input {
+    width: 100%;
+    border: none;
+    font-family: 'Raleway';
+    color: #C8C8C8;
+    font-size: 20px;
+    margin-left: 5%;
+    height: 80%;
+    text-align: center;
+}
+
+.campocep2 input {
+    width: 80%;
+    border: none;
+    font-family: 'Raleway';
+    color: #C8C8C8;
+    font-size: 20px;
+    margin-left: 5%;
+    height: 80%;
+    text-align: center;
+}
+
+/*botao calcular*/
+
+.botaocalcular {
+    background: #0F4156 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 5px;
+    border: 0px;
+    color: white;
+    font-family: 'Raleway';
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 35px 0px 35px;
+    margin: 2%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botaocalcular:hover {
+    background: rgb(10, 41, 54) 0% 0% no-repeat padding-box;
+}
+
+/*segunda section inicio*/
+
+.section2 {
+    margin-bottom: 5%;
+}
+
+.descricao h2{
+    color: #0F4156;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Raleway';
+    font-weight: normal;
+    margin-bottom: 3%;
+}
+
+.descricao p {
+    color: #C8C8C8;
+    font-size: 18px;
+    text-align: left;
+    font-family: 'Raleway';
+    font-weight: normal;
+    line-height: 30px;
+}
+
+/*terceira section inicio*/
+
+.produtosrelacionados h2{
+    color: #0F4156;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Raleway';
+    font-weight: normal;
+}
+
+.cardsproduto {
+    width: 70%;
+    display: flex;
+    margin: auto;
+    margin-bottom: 5%;
+    margin-top: 3%;
+}
+
+.produtorel {
+    background-color: #F8F8F8;
+    margin: 1%;
+    padding: 2% 2% 5% 2%;
+    display: block;
+
+    -webkit-transform:scale(1.0); 
+      -moz-transform:scale(1.0); 
+   	-o-transform:scale(1.0);
+          transform:scale(1.0);
+          transition: 0.3s;
+          cursor: pointer;
+}
+
+.produtorel:hover {
+    -webkit-transform:scale(1.02); 
+    -moz-transform:scale(1.02); 
+      -o-transform:scale(1.02);
+            transform:scale(1.02);
+}
+
+.nomeprodutorel img {
+    width: 100%;
+}
+
+.descricaoprodutorel p {
+    text-align: left;
+    font-family: 'Raleway'; 
+}
+
+.precorel {
+    font-size: 16px;
+    color: #C8C8C8;
+}
+
+.precorel2 {
+    font-size: 14px;
+    color: #C8C8C8;
+}
+
+.align2 {
+    margin-top: 15%;
+}
+
+.align22 {
+    margin-top: 23%;
+}
+
+.precorel3 {
+    font-size: 24px;
+    font-weight: bolder;
+    color: #4EC2DD;
+    margin-top:0;
+}
+
+/*footer inicio*/
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 80px;
+}
+
+.logo2 {
+    width: 23%;
+    text-align: right;
+    background-color: #0F4156;
+    padding: 20px;
+}
+
+.logo2 img {
+    width: 68px;
+}
+
+.copyright {
+    width: 77%;
+    background-color: #4EC2DD;
+    padding: 20px;
+}
+.copyright p {
+    color: white;
+    font-size: 14px;
+    font-family: 'Raleway';
+    font-weight: normal;
+}
+
+
+
+/* laptop desktop */
+@media (max-width: 1024px) {
+
+    main {
+        width: 85%;
+        margin: auto;
+    }
+
+    #cart img {   
+        margin-left: 20px;
+        height: 78px;
+    }
+
+    .hero {
+        height: auto;
+    }
+
+    .large-img {
+        width: 78%;
+    }
+
+    .nomeproduto {
+        margin-left: 0px;
+    }
+
+    .nomeproduto p {
+        margin: 0px 0px 20px 20px;
+    }
+
+    .preconormal {
+        margin-bottom: 8px;
+    }
+
+    .precodesconto {
+        font-size: 24px;
+        margin-top: 0px;
+        margin-bottom: 5px; 
+    }
+
+    .fretebox {
+        margin-top: 10px;
+    }
+
+    .botaocomprar {
+        height: 45px;
+        font-size: 18px;
+    }
+
+
+/* tablet */
+@media (max-width: 768px) {
+
+    header {
+        width: 90%;
+        margin: auto;
+    }
+
+    #cart img {
+        height: 90%;
+    }
+    
+    .hero {
+        display: block;
+    }
+
+    .produtoprincipal {
+        display: block;
+    }
+
+    .small-img {
+        display: none;
+    }
+
+    .large-img {
+        height: fit-content;
+        margin: auto;
+        width: 100%;
+    }
+
+    .nomeproduto {
+        margin-left: 0px;
+    }
+
+    .nomeproduto p {
+        margin: 25px auto;
+    }
+
+    .descricao {
+        padding: 5px;
+    }
+
+    .modal-content {
+        width: 50%;
+    }
+
+    .cardsproduto {
+        display: block;
+        width: 100%;
+    }
+
+    .produtorel {
+        display: flex;
+        max-width: 100%;
+        padding: 18px;
+        margin-bottom: 5%;   
+    }
+
+    .nomeprodutorel img {
+        width:155px;
+    }
+
+    .descricaoprodutorel {
+        margin-left: 3%;
+    }
+
+    .descricaoprodutorel p {
+        margin: 7px;
+    }
+
+    .precorel3 {
+        font-size: 16px;
+    }
+
+    footer {
+        margin-top: 10%;
+    }
+}
+
+/* mobile */
+@media (max-width: 426px) {
+
+    header {
+        width: 80%;
+        margin: auto;
+    }
+
+    .logo {
+        margin-right: 40px;
+    }
+
+    .imglogo {
+       width: 75px;
+    }
+
+    .search {
+        margin-top: 19px;
+    }
+
+    .search input {
+        margin-left: 5%;
+    }
+
+    #cartcart img {   
+        margin-left: 0px;
+        height: 80px;
+    }
+
+    /*burger menu*/
+
+    #menu-toggle {
+        display: block;
+        position: relative;
+        z-index: 1;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+    
+    #menu-toggle input {
+        display: block;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        cursor: pointer;
+        opacity: 0; 
+        z-index: 2;  
+        -webkit-touch-callout: none;
+    }
+    
+    #menu-toggle span {
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+        background: #cdcdcd;
+        border-radius: 3px;
+        z-index: 1;
+        transform-origin: 4px 0px;
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    opacity 0.55s ease;
+    }
+    
+    #menu-toggle span:first-child {
+        transform-origin: 0% 0%;
+    }
+    
+    #menu-toggle span:nth-last-child(2) {
+        transform-origin: 0% 100%;
+    }
+    
+    #menu-toggle input:checked ~ span {
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -1px);
+        background: #4EC2DD;
+    }
+
+    #menu-toggle input:checked ~ span:nth-last-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+
+    #menu-toggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+    }
+    
+    #menu-list {
+        position: absolute;
+        width: 188px;
+        margin: -100px 0 0 -135px;
+        padding: 50px;
+        padding-top: 125px;
+        border-radius: 35px;
+        height: 100px;
+        background: #ffffffec;
+        box-shadow: 0px 0px 13px -4px #2b2a2a2c;
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased;
+        display: block;
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
+      
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    }
+    
+    #menu-toggle input:checked ~ #menu-list
+    {
+        transform: none;
+    }
+
+    /*burger menu fim*/
+
+    main {
+        margin: auto;
+    }
+
+    .hero {
+        height: 1000px;
+    }
+
+    .produtoprincipal {
+        display: block;
+    }
+
+    .large-img {
+        width: 100%;
+    }
+    
+    .nomeproduto p {
+        margin: 25px auto;
+        font-size: 42px;
+    }
+
+    .cardsproduto {
+        display: block;
+        width: 100%;
+    }
+
+    .produtorel {
+        display: flex;
+        max-width: 100%;
+        padding: 18px;
+        margin-bottom: 5%;   
+    }
+
+    .nomeprodutorel img {
+        width:155px;
+    }
+
+    .modal-content {
+        width: 70%;
+    }
+
+    .calculofretewrapper {
+        display: block;
+    }
+
+    .campocep {
+        margin: 2% 6%;
+        padding: 0px 35px;
+    }
+
+    .campocep2 {
+        display: none;
+    }
+
+    .campocep input {
+        margin-left: 0;
+    }
+
+    .botaocalcular {
+        padding: 8px 57px;
+        margin: 2% 19%;
+    }
+
+    .descricao {
+        padding: 5px;
+    }
+
+    .descricaoprodutorel {
+        margin-left: 3%;
+    }
+
+    .descricaoprodutorel p {
+        margin: 7px;
+    }
+
+    .precorel3 {
+        font-size: 16px;
+    }
+
+    footer {
+        margin-top: 10%;
+    }
+    
+}
+
+/*mobile s*/
+@media (max-width: 375px) {
+
+    .hero {
+        height: 950px;
+    }
+
+    #badge {
+        position: center;
+    }
+}
